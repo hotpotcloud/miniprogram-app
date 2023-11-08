@@ -1,16 +1,74 @@
 {
-	"pages": [
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/orange_un.png",
+        "selectedIconPath": "static/orange.png",
+        "text": "快乐橘子"
+      },
+      {
+        "pagePath": "pages/list/index",
+        "iconPath": "static/hotpot_un.png",
+        "selectedIconPath": "static/hotpot.png",
+        "text": "减嘎嘎"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "static/fish_un.png",
+        "selectedIconPath": "static/fish.png",
+        "text": "橘子鱼缸"
+      }
+     
+    ]
+  },
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "name": "ProcessList",
+      "style": {
+        "navigationBarTitleText": "快乐橘子"
+      }
+    },
+    {
+      "path": "pages/index/message",
+      "name": "ProcessList",
+      "style": {
+        "navigationBarTitleText": "重庆美食"
+      }
+    },
+    {
+      "path": "pages/index/todo",
+      "name": "ProcessList",
+      "style": {
+        "navigationBarTitleText": "橘子动物园"
+      }
+    }, {
+      "path": "pages/list/index",
+      "name": "ProcessList",
+      "style": {
+        "navigationBarTitleText": "橘子的美食城"
+      }
+    },
+    {
+      "path": "pages/user/index",
+      "name": "ProcessList",
+      "style": {
+        "navigationBarTitleText": "橘子的鱼缸"
+      }
+    }
+  ]
 }

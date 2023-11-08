@@ -1,6 +1,6 @@
 <template>
-  <view class="content">
-    <image class="logo" src="/static/logo.png" />
+  <view class="content" @tap="onClick">
+    <image class="logo" src="/static/loove.jpg" mode="" />
     <view class="text-area">
       <text class="title">{{ title }}</text>
     </view>
@@ -8,8 +8,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-const title = ref('Hello')
+import { ref } from "vue";
+const title = ref("Hello");
+const onClick = () => {
+  console.log("1", 1);
+};
 </script>
 
 <style>
@@ -21,11 +24,11 @@ const title = ref('Hello')
 }
 
 .logo {
-  height: 200rpx;
+  /* height: 200rpx;
   width: 200rpx;
   margin-top: 200rpx;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
   margin-bottom: 50rpx;
 }
 
